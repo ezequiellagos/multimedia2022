@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo de la página</h1>
+    <h2 class="subtitulo">Subtitulo de la página</h2>
+    <p class="subtitulo">Texto del párrafo</p>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $("#titulo").html("Este es un nuevo título");
+        $(".subtitulo").html("Añadiendo un nuevo subtitulo");
+
+        $("#titulo").click(function(){
+            console.log("Click en el H1");
+            $("#titulo").css('color', 'red');
+            $("#titulo").css("background-color", "blue");
+            $("#titulo").css("font-size", "50px");
+        });
+    </script>
+</body>
+</html>
